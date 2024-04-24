@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>  kheiari / login </title>
+    <link rel="icon" href="images/fav.png" type="image/png" />
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+  
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+   <div class="body-bg">
+
+   <div class="login-text wow fadeInDown">
+    <div class="login-text-content">
+  <!-- logo section -->
+  <div class="img-logo">
+    <a href="index.html">
+      <img src="images/logo.png" class="img-fluid logo" alt="logo" />
+    </a>
+  </div>
+  <!-- end logo section -->
+  <h2 class="form-title">
+   تسجيل دخول صاحب المكان
+  </h2>
+  <p class="form-text">
+   ليس لديك حساب؟
+   <a href="register.html" class="register-link">
+    انشئ حسابك الآن
+   </a>
+  </p>
+  <form class="form-1">
+    <div class="form-input-div">
+      <input type="number" class="form-input-1" placeholder="  رقم الجوال ">
+      <i class="las la-phone form-icon"></i>
+    </div>
+    <div class="form-input-div">
+      <input type="password" class="form-input-1" id="pass" placeholder="   كلمة المرور ">
+      <i class="las la-lock form-icon"></i>
+      <a onclick="togglePassword()">
+        <i class="las la-eye-slash  password-icon" id="eye-slash" ></i>
+        <i class=" las la-eye password-icon" id="eye" ></i>
+       
+        </a>
+    </div>
+<a href="forget-password.html" class="forget-password-link">
+  هل نسيت كلمة المرور؟
+</a>
+<button class="submit-btn" type="submit">
+  دخول
+</button>
+  </form>
+
+  <ul class="footer-nav">
+    <li class="footer-nav-link">
+      <a href="#">
+الشروط والأحكام
+      </a>
+    </li>
+    <li class="footer-nav-link">
+      <a href="#">
+سياسة الخصوصية
+      </a>
+    </li>
+    <li class="footer-nav-link">
+      <a href="#">
+الأسئلة الشائعة
+      </a>
+    </li>
+  </ul>
+  <ul class="social">
+    <li class="social-link">
+      <a href="#">
+        <i class="fa-brands fa-x-twitter social-icon"></i>
+      </a>
+    </li>
+    <li class="social-link">
+      <a href="#">
+        <i class="fa-brands fa-facebook-f social-icon"></i>
+      </a>
+    </li>
+    <li class="social-link">
+      <a href="#">
+        <i class="fa-brands fa-whatsapp social-icon"></i>
+      </a>
+    </li>
+    <li class="social-link">
+      <a href="#">
+        <i class="fa-light fa-envelope social-icon"></i>
+      </a>
+    </li>
+    <li class="social-link">
+      <a href="#">
+        <i class="fa-light fa-mobile social-icon"></i>
+      </a>
+    </li>
+  </ul>
+  <span class="copy-right">
+    خياري 2024 - جميع الحقوق محفوظة ©
+  </span>
+    </div>
+   </div>
+   <div class="login-img">
+    <img class="img-fluid login-image" src="images/login-img.png" alt="login image">
+   </div>
+
+
+   
+
+ 
+  
+</div>
+  
+   
+ <script>
+   function togglePassword() {
+       
+       var x = document.getElementById("pass");
+       var eyeSlash = document.getElementById("eye-slash");
+       var eye = document.getElementById("eye");
+       if (x.type === "password") {
+         x.type = "text";
+         eyeSlash.style.display="none";
+         eye.style.display="block";
+   
+       } else {
+         x.type = "password";
+         eyeSlash.style.display="block";
+         eye.style.display="none";
+       }
+     }
+  </script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+   
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>  kheiari / register </title>
+    <link rel="icon" href="images/fav.png" type="image/png" />
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+  
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+   <div class="body-bg-2">
+    <div class="container">
+      <div class="header">
+         <!-- logo section -->
+  <div class="img-logo">
+    <a href="index.html">
+      <img src="images/logo.png" class="img-fluid logo" alt="logo" />
+    </a>
+  </div>
+  <!-- end logo section -->
+  <p class="login-text-2">
+    لديك حساب ؟
+    <a href="login.html" class="login-link">
+      سجل دخول الأن
+    </a>
+  </p>
+      </div>
+      <div class="register-section wow fadeInDown">
+        <h2 class="form-title mb-20">
+          إنشاء حساب جديد
+         </h2>
+
+      
+  
+          <div class="stepwizard ">
+              <div class="stepwizard-row setup-panel">
+                <div class="stepwizard-step">
+                  <a href="#step-1" type="button" class="btn btn-primary btn-circle">بيانات الحساب</a>
+                 
+                </div>
+                <div class="stepwizard-step">
+                  <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">بيانات المكان</a>
+                 
+                </div>
+                <div class="stepwizard-step">
+                  <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">مواعيد الدوام</a>
+                 
+                </div>
+                <div class="stepwizard-step">
+                  <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">قائمة الطعام </a>
+                 
+                </div>
+                <div class="stepwizard-step">
+                  <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">الفروع  </a>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <form role="form" action="" method="post">
+              <div class="row setup-content" id="step-1">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="control-label">اسم المستخدم</label>
+                  <input maxlength="100" type="text" required="required" class="form-control form-input-1" >
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">رقم الجوال</label>
+                 <div class="country-no">
+                  <input maxlength="100" type="number" required="required" class="form-control form-input-1" placeholder="5xxxxxxxx">
+                  <fieldset>
+                   
+              
+                    <details>
+                      
+                      <summary>
+                        <i class="las la-angle-down select-arrow-icon"></i>
+              +966
+              <img class="flag-icon" src="images/ksa-icon.png" alt="ksa icon">
+                      </summary>
+                     
+              
+                      <input id='US' type='radio' class='rad' name='rad' value="United States">
+                      <label class='opt' for='US'>
+                  &nbsp;&nbsp;
+                 
+                  +966
+                  <img class="flag-icon" src="images/ksa-icon.png" alt="ksa icon">
+                </label>
+              
+                      <input id='GB' type='radio' class='rad' name='rad' value="Great Britain">
+                      <label class='opt' for='GB'>
+                  &nbsp;&nbsp;
+                  +966
+                  <img class="flag-icon" src="images/ksa-icon.png" alt="ksa icon">
+                </label>
+              
+                      <input id='IN' type='radio' class='rad' name='rad' value="India">
+                      <label class='opt' for='IN'>
+                  &nbsp;&nbsp;
+                  +966
+                  <img class="flag-icon" src="images/ksa-icon.png" alt="ksa icon">
+                </label>
+              
+                      <input id='NP' type='radio' class='rad' name='rad' value="Nepal">
+                      <label class='opt' for='NP'>
+                  &nbsp;&nbsp;
+                  +966
+                  <img class="flag-icon" src="images/ksa-icon.png" alt="ksa icon">
+                </label>
+              
+              
+                    </details>
+                  </fieldset>
+                
+                 
+                 </div>
+                 
+                </div>
+
+              </div>
+                 
+                   
+                   
+                  <div class="form-row mb-30">
+                    <div class="form-group">
+                      <label class="control-label">كلمة المرور</label>
+                      <div class="form-input-div">
+                        <input type="password" required="required" class="form-control form-input-1 " id="pass" >
+                        
+                        <a onclick="togglePassword()">
+                          <i class="las la-eye-slash  password-icon" id="eye-slash" ></i>
+                          <i class=" las la-eye password-icon" id="eye" ></i>
+                         
+                          </a>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="control-label">تأكيد كلمة المرور </label>
+                      <div class="form-input-div">
+                        <input type="password" required="required" class="form-control form-input-1" id="pass-2">
+                       
+                        <a onclick="togglePassword2()">
+                          <i class="las la-eye-slash  password-icon" id="eye-slash-2" ></i>
+                          <i class=" las la-eye password-icon" id="eye-2" ></i>
+                         
+                          </a>
+                      </div>
+                    </div>
+
+                  </div>
+                   
+                    <button class="btn btn-primary nextBtn btn-lg pull-right submit-btn continue-btn" type="button">متابعة</button>
+             
+                   
+
+              </div>
+              <div class="row setup-content" id="step-2">
+               
+                <div class="form-row mb-10">
+                <div class="form-group">
+                  <label class="control-label">رقم السجل التجاري </label>
+                  <input maxlength="100" type="number" required="required" class="form-control form-input-1" >
+                </div>
+                <div class="form-group">
+                  <label class="control-label">صورة السجل التجاري </label>
+                
+                  <div class="upload__box">
+                    <div class="upload__btn-box">
+                       <label class="form-input upload__btn form-control form-input-1" id="file" for="customFile">
+                       
+                       <b class="upload-file">إضافة صورة</b>
+                       <input maxlength="100" type="file" required="required" class="  upload__inputfile" id="customFile">
+                       
+                       </label>
+                    </div>
+                  
+                 </div>
+                </div>
+                   </div>
+                   <div class="form-row mb-10">
+                    <div class="form-group">
+                      <label class="control-label">اسم المكان   </label>
+                      <input maxlength="100" type="number" required="required" class="form-control form-input-1" >
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">صورة  أو شعار المكان </label>
+                    
+                      <div class="upload__box">
+                        <div class="upload__btn-box">
+                           <label class="form-input upload__btn form-control form-input-1" id="file2" for="customFile2">
+                           
+                           <b class="upload-file">إضافة صورة</b>
+                           <input maxlength="100" type="file" required="required" class="  upload__inputfile" id="customFile2">
+                           
+                           </label>
+                        </div>
+                      
+                     </div>
+                    </div>
+                       </div>
+
+                       <div class="form-row ">
+                        <div class="form-group">
+                          <label class="control-label">صور إضافية للمكان    </label>
+                          <div class="upload__box">
+                            <div class="upload__btn-box">
+                               <label class="form-input upload__btn form-control form-input-1" id="file3" for="customFile3">
+                               
+                               <b class="upload-file">إضافة صور</b>
+                               <input maxlength="100" type="file" required="required" class="  upload__inputfile" id="customFile3">
+                               
+                               </label>
+                               <div class="upload__img-wrap"></div>
+                            </div>
+                          
+                         </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label">  فيديو للمكان 
+                            <p class="label-note">
+                              (ارفق رابط يوتيوب)
+                            </p>   </label>
+                        
+                          <div class="upload__box">
+                            <div class="upload__btn-box">
+                               <label class="form-input upload__btn form-control form-input-1" id="file4" for="customFile4">
+                               
+                               <b class="upload-file">إضافة صور</b>
+                               <input maxlength="100" type="file" required="required" class="  upload__inputfile" id="customFile4">
+                               
+                               </label>
+                               <div class="upload__img-wrap"></div>
+                            </div>
+                          
+                         </div>
+                        </div>
+
+                        
+                           </div>
+
+                           <div class="form-row mb-10">
+                            <div class="form-group">
+                              <label class="control-label">المدينة  </label>
+                              <div class="select-div">
+                                <i class="las la-angle-down arrow-down-icon"></i>
+                                <select class=" form-control form-input-1">
+                                  <option>اختر من القائمة</option>
+                                  <option>اختر من القائمة</option>
+                                  <option>اختر من القائمة</option>
+                                  <option>اختر من القائمة</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">  التصنيف  
+                                  </label>
+                            
+                                  <div class="select-div">
+                                    <i class="las la-angle-down arrow-down-icon"></i>
+                                    <select class=" form-control form-input-1">
+                                      <option>اختر من القائمة</option>
+                                      <option>اختر من القائمة</option>
+                                      <option>اختر من القائمة</option>
+                                      <option>اختر من القائمة</option>
+                                    </select>
+                                  </div>
+                            </div>
+    
+                            
+                               </div>
+
+                               <div class="form-row mb-10">
+                                <div class="form-group">
+                                  <label class="control-label">نبذة عن المكان  </label>
+                                 <textarea class="form-control form-input-1 textarea">
+                                  </textarea>
+                                </div>
+                               
+        
+                                
+                                   </div>
+                                   <div class="form-btns">
+                                    <button class="btn btn-primary prevBtn btn-lg pull-left back-link-2" type="button">رجوع</button>
+                                    <button class="btn btn-primary nextBtn btn-lg pull-right next-link" type="button">متابعة</button>
+                                  </div>
+                                                      
+                
+               
+              </div>
+              <div class="row setup-content" id="step-3">
+               
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="sunday" name="sunday" value="">
+                    <label for="sunday" class="sunday"> الأحد </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-1" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-2" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="monday" name="monday" value="">
+                    <label for="monday" class="sunday"> الإثنين </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-3" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-4" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="tuesday" name="tuesday" value="">
+                    <label for="tuesday" class="sunday"> الثلاثاء </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-5" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-6" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="wednesday" name="wednesday" value="">
+                    <label for="wednesday" class="sunday"> الأربعاء </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-7" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-8" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="thursday" name="thursday" value="">
+                    <label for="thursday" class="sunday"> الخميس </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-9" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-10" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="friday" name="friday" value="">
+                    <label for="friday" class="sunday"> الجمعة </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-11" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-12" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+
+                 <div class="time-record mb-10">
+                  <div class="checkbox">
+                    <input type="checkbox" class="day-check" id="saturday" name="saturday" value="">
+                    <label for="saturday" class="sunday"> السبت </label>
+                 </div>
+                 <div class="time-input">
+                  <label class="time-label" >
+                    من
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-13" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+
+                 <div class="time-input">
+                  <label class="time-label" >
+                    إلى
+                  </label>
+                  <div class="date-input">
+                    <input type="time" id="date-14" class="date-form-input" disabled />
+                    <i class="las la-clock clock-icon"></i>
+                  </div>
+                
+                 </div>
+                 </div>
+                 <div class="form-btns ">
+                  <button class="btn btn-primary prevBtn btn-lg pull-left back-link-2" type="button">رجوع</button>
+                  <button class="btn btn-primary nextBtn btn-lg pull-right next-link" type="button">متابعة</button>
+                </div>
+
+
+                   
+                 
+              
+              </div>
+
+              <div class="row setup-content" id="step-4">
+                <div class="food-record w-315 mb-10">
+                  <div class="form-group">
+                    <label class="control-label">  صور قائمة الطعام  
+                        </label>
+                  
+                    <div class="upload__box">
+                      <div class="upload__btn-box">
+                         <label class="form-input upload__btn form-control form-input-1" id="file5" for="customFile5">
+                         
+                         <b class="upload-file">إضافة صور</b>
+                         <input maxlength="100" type="file" required="required" class="  upload__inputfile" id="customFile5">
+                         
+                         </label>
+                         <div class="upload__img-wrap"></div>
+                      </div>
+                    
+                   </div>
+                  </div>
+                </div>
+                <div class="form-btns ">
+                  <button class="btn btn-primary prevBtn btn-lg pull-left back-link-2" type="button">رجوع</button>
+                  <button class="btn btn-primary nextBtn btn-lg pull-right next-link" type="button">متابعة</button>
+                </div>
+
+                </div>
+
+                <div class="row setup-content w-930" id="step-5">
+                  <div class="parts-record">
+                    <div class="form-group">
+                      <label class="control-label">اسم الفرع</label>
+                      <input maxlength="100" type="text" required="required" class="form-control form-input-1" >
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">  المدينة  
+                          </label>
+                    
+                          <div class="select-div">
+                            <i class="las la-angle-down arrow-down-icon"></i>
+                            <select class=" form-control form-input-1">
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="form-group ">
+                      <label class="control-label">موقع الفرع على الخريطة</label>
+                      <div class="form-input-div">
+                        <input type="textd" required="required" class="form-control form-input-1 mb-0">
+                        <i class="las la-map password-icon"></i>
+                       
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button class="add-part-btn">
+                        إضافة فرع
+                      </button>
+                    </div>
+                   
+
+                  </div>
+
+                  <div class="record">
+                    <div class="data">
+                      <span class="data-text">
+                        اسم الفرع
+                      </span>
+                      <span class="data-text">
+                        اسم المدينة
+                      </span>
+                      <span class="data-text">
+                        24.714935254329916, 46.675124202248156
+                      </span>
+                    </div>
+                    <button class="delete-btn" type="button"  id="i" onclick="document.body.removeChild(this.parentNode)">
+                      <i class="las la-trash"></i>
+                    </button>
+                  </div>
+
+                  <div class="record">
+                    <div class="data">
+                      <span class="data-text">
+                        اسم الفرع
+                      </span>
+                      <span class="data-text">
+                        اسم المدينة
+                      </span>
+                      <span class="data-text">
+                        24.714935254329916, 46.675124202248156
+                      </span>
+                    </div>
+                    <button class="delete-btn" type="button"  id="i" onclick="document.body.removeChild(this.parentNode)">
+                      <i class="las la-trash"></i>
+                    </button>
+                  </div>
+
+                  <div class="record">
+                    <div class="data">
+                      <span class="data-text">
+                        اسم الفرع
+                      </span>
+                      <span class="data-text">
+                        اسم المدينة
+                      </span>
+                      <span class="data-text">
+                        24.714935254329916, 46.675124202248156
+                      </span>
+                    </div>
+                    <button class="delete-btn" type="button"  id="i" onclick="document.body.removeChild(this.parentNode)">
+                      <i class="las la-trash"></i>
+                    </button>
+                  </div>
+
+                  <div class="form-btns ">
+                    <button class="btn btn-primary prevBtn btn-lg pull-left back-link-2" type="button">رجوع</button>
+                    <a href="success.html" class="next-link"  type="submit">تأكيد التسجيل</a>
+                  </div>
+
+                  </div>
+            </form>
+            
+     
+
+          
+      </div>
+    </div>
+
+ 
+       
+    
+
+
+  
+
+   
+
+   <div class="container">
+    <div class="w-100 mb-100">
+      <p class="form-text w-255">
+        تسجيلك لدى خياري يعني موافقتك على 
+         <button class="register-link terms-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          الشروط والأحكام
+         </button>
+        <!-- Modal -->
+<div class="modal fade terms-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog terms-modal-dialog">
+<div class="modal-content">
+<div class="modal-header terms-modal-header">
+
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body terms-modal-body">
+<h5 class="modal-title terms-modal-title" id="staticBackdropLabel">الشروط والأحكام</h5>
+<p class="terms-modal-p">
+هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
+</p>
+<p class="terms-modal-p">
+هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
+</p>
+<p class="terms-modal-p">
+هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+        </p>
+    </div>
+    <div class="footer-section">
+      <span class="copy-right w-307">
+        خياري 2024 - جميع الحقوق محفوظة ©
+      </span>
+
+      <ul class="social">
+        <li class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-x-twitter social-icon"></i>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f social-icon"></i>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-whatsapp social-icon"></i>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="#">
+            <i class="fa-light fa-envelope social-icon"></i>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="#">
+            <i class="fa-light fa-mobile social-icon"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="footer-nav w-307">
+        <li class="footer-nav-link">
+          <a href="#">
+    الشروط والأحكام
+          </a>
+        </li>
+        <li class="footer-nav-link">
+          <a href="#">
+    سياسة الخصوصية
+          </a>
+        </li>
+        <li class="footer-nav-link">
+          <a href="#">
+    الأسئلة الشائعة
+          </a>
+        </li>
+      </ul>
+
+    </div>
+   
+   </div>
+
+
+ 
+ 
+ 
+    
+  
+
+   
+
+ 
+  
+</div>
+  
+   
+ <script>
+   function togglePassword() {
+       
+       var x = document.getElementById("pass");
+       var eyeSlash = document.getElementById("eye-slash");
+       var eye = document.getElementById("eye");
+       if (x.type === "password") {
+         x.type = "text";
+         eyeSlash.style.display="none";
+         eye.style.display="block";
+   
+       } else {
+         x.type = "password";
+         eyeSlash.style.display="block";
+         eye.style.display="none";
+       }
+     }
+
+     function togglePassword2() {
+       
+       var x = document.getElementById("pass-2");
+       var eyeSlash = document.getElementById("eye-slash-2");
+       var eye = document.getElementById("eye-2");
+       if (x.type === "password") {
+         x.type = "text";
+         eyeSlash.style.display="none";
+         eye.style.display="block";
+   
+       } else {
+         x.type = "password";
+         eyeSlash.style.display="block";
+         eye.style.display="none";
+       }
+     }
+  </script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+   
+    <script src="js/script.js"></script>
+  </body>
+</html>
