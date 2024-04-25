@@ -650,12 +650,12 @@ fieldset {
 height: 48px;
 margin: 0 auto 20px;
 transition: 0.5s;
-border: 2px solid #004889;
+border: 0;
 }
 .continue-btn:hover{
-	background-color: #fff;
-	border: 2px solid #004889;
-	color: #004889;
+	background-color: #C1841B;
+	border: 0;
+	color: #fff;
 }
 .w-255{
 	max-width: 255px;
@@ -682,9 +682,9 @@ border: 2px solid #004889;
     color: #a94442;
 }
 .btn-check:focus+.btn-primary, .btn-primary:focus {
-    color: #004889;
-    background-color: #fff;
-   border: 2px solid #004889;
+    color: #fff;
+    background-color: #C1841B;
+   border: 0;
     box-shadow: none;
 }
 .terms-btn{
@@ -863,7 +863,7 @@ height: 48px;
 border-radius: 31px;
 color: #fff;
 background-color: #004889;
-border:2px solid #004889;
+border:0;
 transition: 0.5s;
 outline: none;
 display: flex;
@@ -877,9 +877,9 @@ font-family: "Tajawal-Bold";
 	margin-bottom: 300px;
 }
 .next-link:hover{
-	border: 2px solid #004889;
-	background-color: #fff;
-	color: #004889;
+	border: 0;
+	background-color: #C1841B;
+	color: #fff;
 }
 .next-link:focus{
 	box-shadow: none;
@@ -1197,12 +1197,12 @@ font-size: 16px;
 font-family: "Tajawal-Bold";
 text-decoration: none;
 transition: 0.5s;
-border: 2px solid #004889;
+border: 0;
 }
 .success-btn:hover{
-	background-color: #fff;
-	border: 2px solid #004889;
-	color: #004889;
+	background-color: #C1841B;
+	border: 0;
+	color: #fff;
 	text-decoration: none;
 }
 .packages{
@@ -1404,6 +1404,7 @@ border:2px solid #004889;
 	}
 	.extra-class-mobile .back-link-2{
 		margin-bottom: 15px;
+		margin-inline-end: 0;
 	}
 	.add-part-btn{
 		width: 100%;
@@ -1414,7 +1415,7 @@ border:2px solid #004889;
 	.copy-right{
 		order:3;
 	}
-	.footer-nav{
+	.body-bg-2 .footer-nav{
 		order: -1;
 	}
 	.login-text{
@@ -1559,6 +1560,7 @@ border:2px solid #004889;
 		position: relative;
 		align-items: flex-start;
 		height: 155px;
+		width: 335px;
 	}
 	.payment-block{
 		width: 335px;
@@ -1630,6 +1632,7 @@ border:2px solid #004889;
 	}
 	.checkbox{
 		width: 100%;
+		margin-bottom: 6px;
 	}
 	.stepwizard {
 		padding-bottom: 7px;
@@ -1662,6 +1665,9 @@ border:2px solid #004889;
 	.form-group{
 		margin-bottom: 15px;
 	}
+	#step-5 .form-group{
+		margin-bottom: 0;
+	}
 	.mb-30{
 		margin-bottom: 15px;
 	}
@@ -1693,6 +1699,7 @@ border:2px solid #004889;
     }
 	.extra-class-mobile .back-link-2 {
         margin-bottom: 0;
+		margin-inline-end: 10px;
     }
 	.extra-class-mobile a{
 		width: 200px;
@@ -1714,6 +1721,7 @@ border:2px solid #004889;
     }
 	.checkbox{
 		width: 110px;
+		margin-bottom: 0;
 	}
 	.date-form-input:disabled{
 		width: 200px;
