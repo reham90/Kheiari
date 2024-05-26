@@ -561,7 +561,27 @@
                       <label class="control-label">موقع الفرع على الخريطة</label>
                       <div class="form-input-div">
                         <input type="textd" required="required" class="form-control form-input-1 mb-0">
-                        <i class="las la-map password-icon"></i>
+                        <button type="button" class="modal-btn" data-bs-toggle="modal" data-bs-target="#mapModal">
+                          <i class="las la-map password-icon"></i>
+                        </button>
+                       <!-- Modal -->
+<div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+  <div class="modal-dialog map-modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title map-modal-title" id="mapModalLabel"> الموقع على الخريطة </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11200.675829730526!2d-75.6876061!3d45.42609535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament+Hill!5e0!3m2!1sen!2sca!4v1528808935681" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                        
                       </div>
                     </div>
@@ -748,8 +768,8 @@
  
   
 </div>
+
   
-   
  <script>
    function togglePassword() {
        

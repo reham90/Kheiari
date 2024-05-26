@@ -1385,6 +1385,36 @@ border:2px solid #004889;
 .mb-85{
 	margin-bottom: 85px;
 }
+
+/* map-modal section */
+.modal-btn{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border: 0;
+	outline: none;
+}
+.modal-btn:focus{
+	border: 0;
+	outline: none;
+}
+.map-modal-dialog{
+	max-width: 700px;
+}
+.map-modal-dialog .btn-close{
+	margin: 0;
+}
+.map-modal-title{
+	font-size: 16px;
+    color: #000;
+	font-family: "Tajawal-Bold";
+}
+
+
+
 /* media query */
 /* menu in phone size */
 @media (max-width: 991px) {
