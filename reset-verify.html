@@ -53,6 +53,7 @@
 <a href="reset-password.html" class="submit-btn" >
  تأكيد
 </a>
+<span id="timer" class="timer">00:45</span>
 <a href="#" class="resend-link">
   إعادة إرسال الكود
 </a>
@@ -60,17 +61,17 @@
 
   <ul class="footer-nav">
     <li class="footer-nav-link">
-      <a href="#">
+      <a href="terms.html">
 الشروط والأحكام
       </a>
     </li>
     <li class="footer-nav-link">
-      <a href="#">
+      <a href="privacy.html">
 سياسة الخصوصية
       </a>
     </li>
     <li class="footer-nav-link">
-      <a href="#">
+      <a href="faq.html">
 الأسئلة الشائعة
       </a>
     </li>
@@ -141,7 +142,39 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-   
+    <script>
+     $('.resend-link').hide();
+       /////////////////////////////////////// resend verification timer ////////////////////////////////
+       let timerOn = true;
+       
+       function timer(remaining) {
+       var m = Math.floor(remaining / 60);
+       var s = remaining % 60;
+       
+       m = m < 10 ? '0' + m : m;
+       s = s < 10 ? '0' + s : s;
+       document.getElementById('timer').innerHTML = m + ':' + s;
+       remaining -= 1;
+       
+       if(remaining >= 0 && timerOn) {
+       setTimeout(function() {
+           timer(remaining);
+       }, 1000);
+       return;
+       }
+       
+       if(!timerOn) {
+       // Do validate stuff here
+       return;
+       }
+       
+       // Do timeout stuff here
+       $('.resend-link').show();
+       }
+       
+       timer(60);
+       
+     </script>
     <script src="js/script.js"></script>
   </body>
 </html>
