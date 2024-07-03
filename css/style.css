@@ -426,6 +426,9 @@ max-height: 49px;
 	margin-inline-end: 70px;
 	justify-content: flex-end;
 }
+.footer-section .copy-right{
+	justify-content: flex-start;
+}
 .login-link{
 	margin-inline-start: 3px;
 	color: #C1841B;
@@ -685,6 +688,8 @@ border: 0;
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 20px;
+	
+	
 }
 .footer-section .social{
 	margin-bottom: 0;
@@ -1444,6 +1449,7 @@ border:2px solid #004889;
 }
 .full-width-content{
 	padding-bottom:  80px;
+	min-height: 100vh;
 }
 .full-width-content-title{
 	font-size: 24px;
@@ -1451,6 +1457,7 @@ border:2px solid #004889;
 	text-align: start;
 	margin: 0 0 30px;
 	font-family: "Tajawal-Bold";
+	
 }
 .full-width-paragraph-div{
 	display: flex;
@@ -1720,6 +1727,9 @@ border:2px solid #004889;
 @media (max-width: 991px) {
 	body {
 		position: relative;
+	}
+	.footer-section .copy-right {
+		justify-content: center;
 	}
 	.form-section{
 		padding: 0 0 132px;
